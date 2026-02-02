@@ -5,16 +5,17 @@
 // Consider: Why does it give this error? Is this what I predicted? If not, what's different?
 // Then try updating the expression last4Digits is assigned to, in order to get the correct value
 
+//my answer:
 //slice() only works for string or Array,cardNumber is number so i predict that the computer will give TypeError. When i 
 //run this Code, my prediction is right. In order to fix it, first cast to string first:
 
 const cardNumber=4533787178994213;
 
-//then conver to number
+//then convert to string
 const last4Digits = cardNumber.toString().slice(-4);
 console.log(last4Digits);
 
 // or i can put quotes on cardNumber which will be string
-const cardNumber ="4533787178994213"
-const last4Digits = cardNumber.slice(-4);
-console.log(last4Digits)
+const cardNumber1 ="4533787178994213"
+const last4Digits1 = cardNumber1.slice(-4);
+console.log(last4Digits1)
