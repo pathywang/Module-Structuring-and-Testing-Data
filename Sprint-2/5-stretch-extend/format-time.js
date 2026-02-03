@@ -26,7 +26,7 @@ console.assert(
  
 // i put this function for test in console, chrome but it showed undefined then i put 12:00 and the output is:Uncaught SyntaxError: 
 // Unexpected token.so the function is not workable and has some bugs.Unfortunately, i can not work out by myself, i went to chatGpt which 
-// explained the detail to me. function format12HourClock(time) does not work right because it does not work for 12:00, 24:00 d not for
+// explained the detail to me. function format12HourClock(time) does not work right because it does not work for 12:00, 24:00 does not for
 // minutes either. The right function should be:
 
 function formatAs12HourClock(time) {
