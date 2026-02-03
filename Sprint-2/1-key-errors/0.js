@@ -9,7 +9,7 @@ function capitalise(str) {
   return str;
 }
 
-// the input "sty" is the same as output "str" which is not allowed in JS
+// the input "str" is the same as output "str" which is not allowed in JS
 // my new code:
 
 function capitalise(str) {

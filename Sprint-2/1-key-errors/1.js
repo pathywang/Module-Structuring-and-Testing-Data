@@ -14,12 +14,11 @@ function convertToPercentage(decimalNumber) {
 
 console.log(decimalNumber);
 
-// =============>const decimalNumber =0.5 is wrong because we can not redeclare parameter using const inside function. 
+// const decimalNumber =0.5 is wrong because we can not redeclare parameter using const inside function. 
 // what is more, decimalNumber is not defined in the global scope so we can not use console.log(decimalNumber)
     
 
-// Finally, correct the code to fix the problem
-// =============> 
+//  correct the code to fix the problem
 function convertToPercentage(decimalNumber) {
   const percentage = `${decimalNumber * 100}%`;
   return percentage;

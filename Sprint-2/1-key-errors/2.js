@@ -17,7 +17,9 @@ function square(3) {
 // Finally, correct the code to fix the problem
 
 // =============>
-function square(num){return num*num};
+function square(num){
+    return num*num
+};
 
 console.log (square(3));
 
