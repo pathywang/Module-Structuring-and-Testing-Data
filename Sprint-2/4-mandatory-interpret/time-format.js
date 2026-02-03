@@ -24,9 +24,9 @@ function formatTimeDisplay(seconds) {
 
 // b) What is the value assigned to num when pad is called for the first time?
 // =============> The first call is for totalHours, and when you call formatTimeDisplay(61), the value of totalHours is:
-//totalHours = (61 - 1) / 60 = 60 / 60 = 1, remainingMinutes = 1
-//totalHours = totalMinutes - remainingMinutes = 1 - 1 = 0
-// So, num = 0 for the first pad call.
+// remainingSeconds = 61%60 = 1
+// totalMinutes = (61-1)/60 = 1 remainingMinutes = 1%60 =1
+// totalHours =(1-1)/60 = 0 so the value assigned to num is 0 when pad is called for the first time
 
 // c) What is the return value of pad is called for the first time?
 // =============> The return value is "00" because pad(0) results in "00" using .padStart(2, "0").
