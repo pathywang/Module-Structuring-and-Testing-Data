@@ -17,7 +17,7 @@ function formatTimeDisplay(seconds) {
 // Questions
 
 // a) When formatTimeDisplay is called how many times will pad be called?
-// =============> pad is called 3 times — once each for hours, for minutes andvfor seconds.
+// =============> pad is called 3 times — once each for hours, for minutes and for seconds.
 
 
 // Call formatTimeDisplay with an input of 61, now answer the following:
