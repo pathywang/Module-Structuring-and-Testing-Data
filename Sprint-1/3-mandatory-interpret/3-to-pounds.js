@@ -24,7 +24,7 @@ console.log(`£${pounds}.${pence}`);
 // Try and describe the purpose / rationale behind each step
 
 // To begin, we can start with
-// 1. const penceString = "399p": initialises a string variable with the value "399p",p means pence so 399p means 399 pence.
+// 1. const penceString = "399p": declare string variable with the value "399p" assigned,p means pence so 399p means 399 pence.
 
 // 2.const penceStringWithoutTrailingP = penceString.substring(0, penceString.length - 1);Removes the trailing "p" from the string.
 // .substring(0, length - 1) means: take all characters except the last one.Result: "399",which will get only the numeric part of the price.
