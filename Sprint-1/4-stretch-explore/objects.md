@@ -15,7 +15,7 @@ Answer the following questions:
 What does `console` store?
 What does the syntax `console.log` or `console.assert` mean? In particular, what does the `.` mean?
 
-what i get from Chrpme devtools Console:
+what i get from Chrome devtools Console:
 
 >console.log
 <.ƒ log() { [native code] }
