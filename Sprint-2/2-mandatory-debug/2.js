@@ -19,7 +19,8 @@ console.log(`The last digit of 806 is ${getLastDigit(806)}`);
 //The last digit of 806 is 3
 // 
 
-// Explain why the output is the way it is
+// Explain why the output is the way it is:
+
 //num is always 103 inside the function (from the global variable).
 //So, every call to getLastDigit() returns "3" (the last digit of 103).
 //The arguments you pass (like 42, 105) are ignored because the function doesn't take parameters.
