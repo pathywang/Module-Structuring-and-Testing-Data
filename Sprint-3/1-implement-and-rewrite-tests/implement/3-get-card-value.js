@@ -22,21 +22,7 @@
 // execute the code to ensure all tests pass.
 
 function getCardValue(card) {
-  const validSuits = ["♠", "♥", "♦", "♣"];
-  const validRanks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
-
-  const suit = card.slice(-1);
-  const rank = card.slice(0, -1);
-
   
-  if (!validSuits.includes(suit) || !validRanks.includes(rank)) {
-    throw new Error("Invalid card");
-  }
-
-  if (rank === "A") return 11;
-  if (["J", "Q", "K"].includes(rank)) return 10;
-
-  return Number(rank);
 } 
 
 
@@ -55,28 +41,6 @@ function assertEquals(actualOutput, targetOutput) {
 // TODO: Write tests to cover all outcomes, including throwing errors for invalid cards.
 // Examples 1 numbers:
 assertEquals(getCardValue("9♠"), 9);
-assertEquals(getCardValue("5♣"), 5);
-
-//Examples  A:
-assertEquals(getCardValue("A♦"), 11)
-
-//Examples J Q K:, 
-assertEquals(getCardValue("Q♥"), 10)
-assertEquals(getCardValue("K♥"), 10)
-
-//Examples invalid numbers:
-assertThrow(()=>getCardValue("1♥"))
-assertThrow(()=>getCardValue("11♥"))
-
-//Examples invalid suit:
-assertThrow(()=>getCardValue("A*"))
-
-//Examples missing rank or suit:
-assertThrow(()=>getCardValue("♥"))
-assertThrow(()=>getCardValue("5"))
-
-//Example extra suit:
-assertThrow(()=>getCardValue("Q♠♠"))
 
 
 function assertThrow(fn){
@@ -87,10 +51,8 @@ try { (fn)
   console.error("Error was not thrown for invalid card");
 } catch (error) {
   // if the above code throws, we catch the error here, that stops the whole program crashing
-  console.log('there was an error getting card value!',error)
-}}
+  
 
-console.log(' we finished running getcardvalue')
 
 // What other invalid card cases can you think of?
 
