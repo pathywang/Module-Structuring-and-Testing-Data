@@ -2,7 +2,11 @@
 const countChar = require("./count");
 // Given a string `str` and a single character `char` to search for,
 // When the countChar function is called with these inputs,
-// Then it should:
+// Then it should: 
+test("should count  occurrences of a character", () => {
+  expect(countChar("tired", "d")).toEqual(1)
+})
+
 
 // Scenario: Multiple Occurrences
 // Given the input string `str`,
@@ -22,3 +26,6 @@ test("should count multiple occurrences of a character", () => {
 // And a character `char` that does not exist within `str`.
 // When the function is called with these inputs,
 // Then it should return 0, indicating that no occurrences of `char` were found.
+test("should count no occurrences of a character", () => {
+  expect(countChar("bananataste","w")).toEqual(0)
+})
