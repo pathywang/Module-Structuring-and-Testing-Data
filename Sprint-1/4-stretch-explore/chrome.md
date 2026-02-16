@@ -24,17 +24,18 @@ the pop up box:chrome://new-tab-page says  Hello world!  i press ok button, retu
 <.'ping'
 Warning: Don’t paste code into the DevTools Console that you don’t understand or haven’t reviewed yourself. This could allow attackers to steal your identity or take control of your computer. Please type ‘allow pasting’ below and press Enter to allow pasting.
 allow pasting
->let myName = prompt("What is your name?");
-the pop up box:chrome://new-tab-page says, i ignore blue box just press cancel,
-<.console.log("Your name is:", myName);
-VM255:2 Your name is: null
-undefined
->let myName = prompt("What is your name?");
-in pop up box: chrome://new-tab-page says, i put my name'ping' in blue box then press ok
-<.console.log("Your name is:", myName);
-VM259:2 Your name is: ping
-undefined
-The value returned from prompt() is stored in the variable myName. The pop up box pauses the JS execution until i press the button either'cancel' or put my name before press'OK'.
+The value returned from prompt() is stored in the variable myName.
+The pop-up box pauses JavaScript execution until the user responds by either:
+
+typing a value and pressing OK → returns the input string, or
+
+pressing Cancel → returns null.
+This return value can then be used in the program, for example:
+
+console.log("Your name is:", myName);
+
+
+In some Chrome setups, I may need to grant permissions to allow pop-ups for prompt to work properly in DevTools.
 
 
 

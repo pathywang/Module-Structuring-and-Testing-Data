@@ -21,10 +21,12 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
 
-//a: There are three function calls, which are: Number(...), replaceAll(...) and console.log(...)
-//   Function call lines: 1. carPrice = Number(carPrice.replaceAll(",", ""));
-//                        2. priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ""));
-//                        3. console.log(`The percentage change is ${percentageChange}`);
+//a: There are five function calls, which are: Number(...), replaceAll(...) and console.log(...)
+//   Function call lines: 1. (carPrice.replaceAll(",", ""));
+//                        2.  Number(carPrice.replaceAll(",", ""));
+//                        3. Number(priceAfterOneYear.replaceAll("," ""));
+//                        4. (priceAfterOneYear.replaceAll("," ""));
+//                        5. console.log(`The percentage change is ${percentageChange}`);
 
 //b: priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," "")) has an error,SyntaxError: Unexpected string
 //    missing a comma between the arguments of replaceAll.

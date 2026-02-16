@@ -35,7 +35,7 @@ console.log(result);
 // Answer d:it calculates the number of full minutes in the total movie length. so 8784-24=8760/60=146 minutes
 
 // Answer e: this builds a string representing the time in HH:MM:SS format, based on the movie length in seconds. The better name can be 
-//           formattedTime or timeString.
+//           movieDuration,movieDurationFormatted oe formattedMovieLength
 
 // Answer e: It will work for most large integers or large hours but it does not work well for time below 60 seconds like 37 seconds is 
 //           0:0:37 which can be considered unformatted. What is more, it does not handle negative numbers and does not pad numbers with zero.
