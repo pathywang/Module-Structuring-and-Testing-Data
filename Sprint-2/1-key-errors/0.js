@@ -9,7 +9,11 @@ function capitalise(str) {
   return str;
 }
 
-// the input "str" is the same as output "str" which is not allowed in JS
+// Error occurs because we tried to declare a new variable "str" 
+// that has the same name as the function parameter "str". 
+// Parameter names act as local variables inside the function, 
+// so redeclaring them with let/const is not allowed.
+
 // my new code:
 
 function capitalise(str) {

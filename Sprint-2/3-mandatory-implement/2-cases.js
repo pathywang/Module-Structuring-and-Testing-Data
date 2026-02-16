@@ -18,7 +18,8 @@
 // The function  to convert any string to UPPER_SNAKE_CASE:
 
 function toUpperSnakeCase(input) {
-  return input.trim().toUpperCase().replace(/\s+/g, "_");}
+  return input.trim().toUpperCase().replace(/\s+/g, "_");
+}
 
 console.log(toUpperSnakeCase("hello there")); // output:HELLO_THERE
 console.log(toUpperSnakeCase("lord of the rings")); // output: LORD_OF_THE_RINGS

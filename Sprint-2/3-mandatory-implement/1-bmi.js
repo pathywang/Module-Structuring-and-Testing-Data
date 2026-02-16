@@ -13,11 +13,14 @@
 // Given someone's weight in kg and height in metres
 // Then when we call this function with the weight and height
 // It should return their Body Mass Index to 1 decimal place
+// Due to toFixed() always return string, so i put Number() function to return number for BMI
+
+
 
 function calculateBMI(weight, height) { 
     const bmi= weight/(height*height); 
-    return bmi.toFixed(1);
+    return Number(bmi.toFixed(1));
 }
 
-    
+
 console.log(calculateBMI(58,1.50)); // output: 25.8
