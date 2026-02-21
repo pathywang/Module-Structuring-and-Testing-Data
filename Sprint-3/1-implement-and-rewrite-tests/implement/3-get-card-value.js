@@ -22,9 +22,8 @@
 // execute the code to ensure all tests pass.
 
 function getCardValue(card) {
-  
-} 
-
+  // TODO: Implement this function
+}
 
 // The line below allows us to load the getCardValue function into tests in other files.
 // This will be useful in the "rewrite tests with jest" step.
@@ -39,23 +38,15 @@ function assertEquals(actualOutput, targetOutput) {
 }
 
 // TODO: Write tests to cover all outcomes, including throwing errors for invalid cards.
-// Examples 1 numbers:
+// Examples:
 assertEquals(getCardValue("9♠"), 9);
 
-
-function assertThrow(fn){
-try { (fn)
-  // we try to run this function, if it throws, stop running this bit and run the catch below
+// Handling invalid cards
+try {
+  getCardValue("invalid");
 
   // This line will not be reached if an error is thrown as expected
   console.error("Error was not thrown for invalid card");
-} catch (error) {
-  // if the above code throws, we catch the error here, that stops the whole program crashing
-  
-
+} catch (e) {}
 
 // What other invalid card cases can you think of?
-
-//Examples wrong type:
-assertThrow(()=>getCardValue("null"))
-assertThrow(()=>getCardValue("42"))
