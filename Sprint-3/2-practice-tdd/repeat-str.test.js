@@ -20,13 +20,23 @@ test("should repeat the string count times", () => {
 // Given a target string `str` and a `count` equal to 1,
 // When the repeatStr function is called with these inputs,
 // Then it should return the original `str` without repetition.
+test("should repeat the string only once", () => {
+  expect(repeatStr("nihao",1)).toEqual("nihao");
+});
 
 // Case: Handle count of 0:
 // Given a target string `str` and a `count` equal to 0,
 // When the repeatStr function is called with these inputs,
 // Then it should return an empty string.
+test("should repeat the string 0", () => {
+  expect(repeatStr("newyear",0)).toEqual("");
+});
 
 // Case: Handle negative count:
 // Given a target string `str` and a negative integer `count`,
 // When the repeatStr function is called with these inputs,
 // Then it should throw an error, as negative counts are not valid.
+test("should throw an error when count is negative", () => {
+  expect(() => repeatStr("celebration", -5))
+    .toThrow("Count cannot be negative");
+});
