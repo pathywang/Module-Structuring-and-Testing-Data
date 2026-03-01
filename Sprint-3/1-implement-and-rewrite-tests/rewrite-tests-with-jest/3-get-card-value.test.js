@@ -4,7 +4,7 @@ const getCardValue = require("../implement/3-get-card-value");
 
 // TODO: Write tests in Jest syntax to cover all possible outcomes.
 
-// Case 1: Ace (A)
+// Case 1: Ace (A)1
 test(`Should return 11 when given an ace card`, () => {
   expect(getCardValue("A♠")).toEqual(11);
 });
