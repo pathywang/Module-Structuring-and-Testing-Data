@@ -62,8 +62,9 @@ assertEquals(getCardValue("5♣"), 5);
 assertEquals(getCardValue("A♦"), 11)
 
 //Examples J Q K:, 
-assertEquals(getCardValue("Q♥"), 10)
-assertEquals(getCardValue("K♥"), 10)
+assertEquals(getCardValue("Q♣"), 10)
+assertEquals(getCardValue("K♠"), 10)
+assertEquals(getCardValue("J♣"), 10)
 
 //Examples invalid numbers:
 assertThrow(()=>getCardValue("1♥"))

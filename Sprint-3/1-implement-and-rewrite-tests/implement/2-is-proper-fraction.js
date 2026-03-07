@@ -36,7 +36,7 @@ assertEquals(isProperFraction(1, 2), true);
 assertEquals(isProperFraction(5,5), false);
 
 //Case 3: (-3)/(-5) is a proper fraction
-assertEquals(isFinite(-3,-5), true);
+assertEquals(isProperFraction(-3,-5), true);
 
 //Case 4: (-4)/6 is a proper fraction
 assertEquals(isProperFraction(-4,6),true);
