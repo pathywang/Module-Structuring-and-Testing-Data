@@ -18,7 +18,7 @@ test ('should return "Right angle" when angle ===90',() => {
   expect(getAngleType(90)).toEqual("Right angle");
 })
 // Case 3: Obtuse angles
-test ('should return "Obtuse angle" when (90<angle && angle <180)',() => {
+test ('should return "Obtuse angle" when (90<angle <180)',() => {
   expect(getAngleType(135)).toEqual("Obtuse angle");
 })
 
@@ -28,7 +28,7 @@ test ('should return "Straight angle" when angle ===180',() => {
 })
 
 // Case 5: Reflex angles
-test ('should return "Obtuse angle" when (180<angle && angle <360)',() => {
+test ('should return "Reflex angle" when (180<angle<360)',() => {
   expect(getAngleType(275)).toEqual("Reflex angle");
 })
 
@@ -38,7 +38,7 @@ test('should return "Full rotation angle" when (angle=360)', ()=> {
   expect(getAngleType(360)).toEqual("Full rotation angle");
 })
 
-test('should return "Invalid angle"when (angle>=360)', ()=> {
+test('should return "Invalid angle"when (angle>360)', ()=> {
   expect(getAngleType(1012)).toEqual("Invalid angle");
 })
 
